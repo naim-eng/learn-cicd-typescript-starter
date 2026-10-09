@@ -1,4 +1,3 @@
-
 import { describe, expect, test } from "vitest";
 import { getAPIKey } from "../api/auth";
 
@@ -7,8 +6,8 @@ describe("getAPIKey", () => {
     const headers = {
       authorization: "ApiKey my-secret-key",
     };
-     
-     expect(getAPIKey(headers)).toBe("my-secret-key");
+
+    expect(getAPIKey(headers)).toBe("my-secret-key");
   });
 
   test("returns null when authorization header is missing", () => {
