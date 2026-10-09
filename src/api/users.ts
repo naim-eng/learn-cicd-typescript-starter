@@ -1,4 +1,3 @@
-
 import { Request, Response } from "express";
 import crypto from "crypto";
 import { v4 as uuidv4 } from "uuid";
@@ -42,4 +41,3 @@ function generateRandomSHA256Hash(): string {
     .update(crypto.randomBytes(32))
     .digest("hex");
 }
-    
